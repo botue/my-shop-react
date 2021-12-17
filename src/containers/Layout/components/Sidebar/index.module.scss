@@ -1,10 +1,13 @@
 
-.avatar {
+.logo {
   width: 100px;
   height: 100px;
+  padding: 8px;
   margin: 20px auto 0;
   border-radius: 50%;
   box-shadow: 0px 5px 20px rgba(33, 61, 192, .4);
+  box-sizing: border-box;
+  background-color: #20232a;
   overflow: hidden;
 
   img {

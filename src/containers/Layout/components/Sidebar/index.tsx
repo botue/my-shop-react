@@ -9,7 +9,7 @@ import {
 import type { LinkProps } from "react-router-dom"
 
 import styles from './index.module.scss'
-import avatar from '../../../../assets/images/avatar_1.jpg'
+import logo from '../../../../assets/images/logo.png'
 
 export default function Sidebar () {
   // 组件状态
@@ -85,8 +85,8 @@ export default function Sidebar () {
 
   return (
     <>
-      <div className={styles.avatar}>
-        <img src={avatar} alt="" />
+      <div className={styles.logo}>
+        <img src={logo} alt="" />
       </div>
       <div className={styles.navs}>
         <ul>
