@@ -10,7 +10,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul, p {
+  padding: 0;
+  margin: 0;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:link, &:visited {
+    color: #171C49;
+  }
+
+  &:hover, &:active {
+    color: #213DC0;
+  }
+}
+
+

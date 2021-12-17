@@ -1,10 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter } from "react-router-dom"
+
+import { store } from './redux/store';
+import { Provider } from 'react-redux';
+
+import Layout from './containers/Layout'
+import './index.scss'
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Hello React!</h1>
+      <BrowserRouter>
+        <Provider store={store}>
+          <Layout />
+          </Provider>
+      </BrowserRouter>
+  
   </React.StrictMode>,
   document.getElementById('root')
 );

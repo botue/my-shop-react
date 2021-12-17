@@ -1,0 +1,81 @@
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 0;
+  border-radius: 50%;
+  box-shadow: 0px 5px 20px rgba(33, 61, 192, .4);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+  }
+}
+
+.navs {
+  margin-top: 40px;
+
+  li {
+    margin: 4px 0;
+  }
+
+  a {
+    display: block;
+    line-height: 1;
+    padding: 18px 0 18px 76px;
+    font-size: 14px;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-position: 36px center, 0 0;
+
+    &:hover, &.active {
+      color: #213DC0;
+    }
+
+    &:not(.label):hover, &:not(.label).active {
+      border-right: 4px solid #213dc0;
+    }
+
+    & + ul {
+      max-height: 200px;
+      overflow-y: hidden;
+      transition: max-height 0.5s ease-in-out;
+
+      &.collapsed {
+        max-height: 0;
+      }
+
+      a {
+        padding-left: 90px;
+        background-position: 0 0;
+
+        &:hover, &.active {
+          background-image: linear-gradient(
+            to right,
+            #ffffff,
+            #dbebff
+          );
+        }
+      }
+    }
+  }
+}
+
+@each $name in 'home', 'menu', 'list', 'bell', 'folder', 'user', 'expand' {
+  :global(.icon-#{$name}) {
+    background-image: url(../../../../assets/images/#{$name}_default.png);
+
+    &:not(.label):hover, &:not(.label).active {
+      background-image: url(../../../../assets/images/#{$name}_active.png),
+      linear-gradient(
+        to right,
+        #ffffff,
+        #dbebff
+      );
+    }
+
+    &:hover, &.active {
+      background-image: url(../../../../assets/images/#{$name}_active.png);
+    }
+  }
+}
