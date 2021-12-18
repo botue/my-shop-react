@@ -10,12 +10,11 @@ import './index.scss'
 
 ReactDOM.render(
   <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename="/my-shop-react">
         <Provider store={store}>
           <Layout />
           </Provider>
       </BrowserRouter>
-  
   </React.StrictMode>,
   document.getElementById('root')
 );
