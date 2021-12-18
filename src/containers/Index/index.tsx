@@ -1,4 +1,3 @@
-
-export default function Index () {
-  return <h3>首页</h3>
+export default function Index(): JSX.Element {
+  return <h3>首页</h3>;
 }

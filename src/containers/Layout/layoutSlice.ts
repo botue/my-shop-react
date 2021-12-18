@@ -1,23 +1,23 @@
-import { createSlice } from "@reduxjs/toolkit"
+import { createSlice } from "@reduxjs/toolkit";
 
 export interface LayoutState {
-  collapsed: boolean
+  collapsed: boolean;
 }
 
 // 初始数据
 const initialState: LayoutState = {
-  collapsed: false
+  collapsed: false,
 };
 
 export const layoutSlice = createSlice({
-  name: 'layout',
+  name: "layout",
   initialState,
   reducers: {
     toggleSidebar: (state) => {
-      state.collapsed = !state.collapsed
-    }
-  }
-})
+      state.collapsed = !state.collapsed;
+    },
+  },
+});
 
-export const { toggleSidebar } = layoutSlice.actions
-export default layoutSlice.reducer
+export const { toggleSidebar } = layoutSlice.actions;
+export default layoutSlice.reducer;

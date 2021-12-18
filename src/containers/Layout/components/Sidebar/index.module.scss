@@ -1,11 +1,10 @@
-
 .logo {
   width: 100px;
   height: 100px;
   padding: 8px;
   margin: 20px auto 0;
   border-radius: 50%;
-  box-shadow: 0px 5px 20px rgba(33, 61, 192, .4);
+  box-shadow: 0px 5px 20px rgba(33, 61, 192, 0.4);
   box-sizing: border-box;
   background-color: #20232a;
   overflow: hidden;
@@ -31,11 +30,13 @@
     background-repeat: no-repeat;
     background-position: 36px center, 0 0;
 
-    &:hover, &.active {
-      color: #213DC0;
+    &:hover,
+    &:global(.active) {
+      color: #213dc0;
     }
 
-    &:not(.label):hover, &:not(.label).active {
+    &:not(.label):hover,
+    &:not(.label):global(.active) {
       border-right: 4px solid #213dc0;
     }
 
@@ -52,32 +53,27 @@
         padding-left: 90px;
         background-position: 0 0;
 
-        &:hover, &.active {
-          background-image: linear-gradient(
-            to right,
-            #ffffff,
-            #dbebff
-          );
+        &:hover,
+        &:global(.active) {
+          background-image: linear-gradient(to right, #ffffff, #dbebff);
         }
       }
     }
   }
 }
 
-@each $name in 'home', 'menu', 'list', 'bell', 'folder', 'user', 'expand' {
+@each $name in "home", "menu", "list", "bell", "folder", "user", "expand" {
   :global(.icon-#{$name}) {
     background-image: url(../../../../assets/images/#{$name}_default.png);
 
-    &:not(.label):hover, &:not(.label).active {
+    &:not(.label):hover,
+    &:not(.label):global(.active) {
       background-image: url(../../../../assets/images/#{$name}_active.png),
-      linear-gradient(
-        to right,
-        #ffffff,
-        #dbebff
-      );
+        linear-gradient(to right, #ffffff, #dbebff);
     }
 
-    &:hover, &.active {
+    &:hover,
+    &:global(.active) {
       background-image: url(../../../../assets/images/#{$name}_active.png);
     }
   }

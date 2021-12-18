@@ -1,16 +1,16 @@
-
 @import-normalize;
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul, p {
+ul,
+p {
   padding: 0;
   margin: 0;
 }
@@ -22,13 +22,13 @@ ul {
 a {
   text-decoration: none;
 
-  &:link, &:visited {
-    color: #171C49;
+  &:link,
+  &:visited {
+    color: #171c49;
   }
 
-  &:hover, &:active {
-    color: #213DC0;
+  &:hover,
+  &:active {
+    color: #213dc0;
   }
 }
-
-
