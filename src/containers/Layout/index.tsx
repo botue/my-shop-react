@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
+import { useAppSelector } from "../../redux/hooks";
 
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
@@ -9,7 +8,7 @@ import styles from "./index.module.scss";
 import Index from "../Index";
 
 export default function Layout(): JSX.Element {
-  const collapsed = useSelector((state: RootState) => {
+  const collapsed = useAppSelector((state) => {
     return state.collapsed;
   });
 

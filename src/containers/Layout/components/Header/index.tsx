@@ -1,12 +1,12 @@
 import { MouseEvent } from "react";
-import { useDispatch } from "react-redux";
+import { useAppDispatch } from "../../../../redux/hooks";
 
 import { toggleSidebar } from "../../layoutSlice";
 
 import styles from "./index.module.scss";
 
 export default function Header(): JSX.Element {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   function sidebarToggle(ev: MouseEvent<HTMLAnchorElement>) {
     ev.currentTarget.classList.toggle(styles.flip);
     ev.preventDefault();
