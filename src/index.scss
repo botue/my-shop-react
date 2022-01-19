@@ -7,6 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #171c49;
+  font-weight: 700;
 }
 
 ul,
@@ -31,4 +33,9 @@ a {
   &:active {
     color: #213dc0;
   }
+}
+
+:root {
+  --box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  --border-radius: 6px;
 }
