@@ -1,9 +1,9 @@
-import { MouseEvent } from "react";
-import { useAppDispatch } from "../../../../redux/hooks";
+import { MouseEvent } from 'react';
+import { useAppDispatch } from '../../../../redux/hooks';
 
-import { toggleSidebar } from "../../layoutSlice";
+import { toggleSidebar } from '../../layoutSlice';
 
-import styles from "./index.module.scss";
+import styles from './index.module.scss';
 
 export default function Header(): JSX.Element {
   const dispatch = useAppDispatch();
@@ -17,7 +17,7 @@ export default function Header(): JSX.Element {
   return (
     <>
       <a href="#!" className={styles.togglebar} onClick={sidebarToggle}>
-        {" "}
+        {' '}
       </a>
     </>
   );
