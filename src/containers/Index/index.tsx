@@ -1,6 +1,14 @@
-import styles from "./index.module.scss";
+import styles from './index.module.scss';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 export default function Index(): JSX.Element {
+  useEffect(() => {
+    axios.get('/api/test').then((res) => {
+      console.log(res);
+    });
+  });
+
   return (
     <>
       <header className={styles.header}>

@@ -1,6 +1,4 @@
 module.exports = {
-  plugins: ["stylelint-prettier"],
-  extends: [
-    "stylelint-config-prettier"
-  ]
-}
+  plugins: ['stylelint-prettier'],
+  extends: ['stylelint-config-prettier'],
+};
