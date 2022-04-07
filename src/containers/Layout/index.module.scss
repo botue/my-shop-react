@@ -36,7 +36,6 @@
   height: 60px;
   padding: 0 30px;
   background-color: #213dc0;
-  transition: margin-left 0.3s;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -48,19 +47,19 @@
 
 // 适配小尺寸屏幕
 @media screen and (max-width: 1280px) {
-  .sidebar {
-    transform: translate(-200px);
-  }
+  // .sidebar {
+  //   transform: translate(-200px);
+  // }
 
-  .main {
-    margin-left: 0;
-  }
+  // .main {
+  //   margin-left: 0;
+  // }
 
-  .collapsed .sidebar {
-    transform: translate(0);
-  }
+  // .collapsed .sidebar {
+  //   transform: translate(0);
+  // }
 
-  .collapsed .header {
-    margin-left: 200px;
-  }
+  // .collapsed .header {
+  //   margin-left: 200px;
+  // }
 }

@@ -13,12 +13,12 @@ export default function Index(): JSX.Element {
 
     // 动态设置 .cards 盒子的宽度
     if (cardsRef.current && cardsRef.current.parentNode) {
-      const parentNode = cardsRef.current.parentNode as HTMLElement;
-      const { paddingLeft } = getComputedStyle(parentNode);
-      const { clientWidth } = parentNode;
-      // 计算盒子的实际宽度
-      cardsRef.current.style.width =
-        clientWidth - 2 * parseFloat(paddingLeft) + 'px';
+      // const parentNode = cardsRef.current.parentNode as HTMLElement;
+      // const { paddingLeft } = getComputedStyle(parentNode);
+      // const { clientWidth } = parentNode;
+      // // 计算盒子的实际宽度
+      // cardsRef.current.style.width =
+      //   clientWidth - 2 * parseFloat(paddingLeft) + 'px';
     }
   });
 
@@ -360,67 +360,85 @@ export default function Index(): JSX.Element {
             </div>
           </div>
         </div>
-        {/* 新品入库 */}
-        <div className={styles.goods}>
-          <h5 className={styles.title}>新品入库</h5>
-          <div className={styles.cards} ref={cardsRef}>
-            <a href="#!">
-              <img
-                src={require('../../assets/uploads/goods_1.jpg').default}
-                alt=""
-              />
-              <span className={styles.price}>￥12.82</span>
-              <span>预计收入1.80元</span>
-              <button>上架</button>
-            </a>
-            <a href="#!">
-              <img
-                src={require('../../assets/uploads/goods_2.jpg').default}
-                alt=""
-              />
-              <span className={styles.price}>￥12.82</span>
-              <span>预计收入1.80元</span>
-              <button>上架</button>
-            </a>
-            <a href="#!">
-              <img
-                src={require('../../assets/uploads/goods_3.jpg').default}
-                alt=""
-              />
-              <span className={styles.price}>￥12.82</span>
-              <span>预计收入1.80元</span>
-              <button>上架</button>
-            </a>
-            <a href="#!">
-              <img
-                src={require('../../assets/uploads/goods_4.jpg').default}
-                alt=""
-              />
-              <span className={styles.price}>￥12.82</span>
-              <span>预计收入1.80元</span>
-              <button>上架</button>
-            </a>
-            <a href="#!">
-              <img
-                src={require('../../assets/uploads/goods_5.jpg').default}
-                alt=""
-              />
-              <span className={styles.price}>￥12.82</span>
-              <span>预计收入1.80元</span>
-              <button>上架</button>
-            </a>
-            <a href="#!">
-              <img
-                src={require('../../assets/uploads/goods_6.jpg').default}
-                alt=""
-              />
-              <span className={styles.price}>￥12.82</span>
-              <span>预计收入1.80元</span>
-              <button>上架</button>
-            </a>
-          </div>
-        </div>
       </main>
+      {/* 新品入库 */}
+      <div className={styles.goods}>
+        <h5 className={styles.title}>新品入库</h5>
+        <div className={styles.cards} ref={cardsRef}>
+          <a href="#!">
+            <img
+              src={require('../../assets/uploads/goods_1.jpg').default}
+              alt=""
+            />
+            <span className={styles.price}>￥12.82</span>
+            <span>预计收入1.80元</span>
+            <button>上架</button>
+          </a>
+          <a href="#!">
+            <img
+              src={require('../../assets/uploads/goods_2.jpg').default}
+              alt=""
+            />
+            <span className={styles.price}>￥12.82</span>
+            <span>预计收入1.80元</span>
+            <button>上架</button>
+          </a>
+          <a href="#!">
+            <img
+              src={require('../../assets/uploads/goods_3.jpg').default}
+              alt=""
+            />
+            <span className={styles.price}>￥12.82</span>
+            <span>预计收入1.80元</span>
+            <button>上架</button>
+          </a>
+          <a href="#!">
+            <img
+              src={require('../../assets/uploads/goods_4.jpg').default}
+              alt=""
+            />
+            <span className={styles.price}>￥12.82</span>
+            <span>预计收入1.80元</span>
+            <button>上架</button>
+          </a>
+          <a href="#!">
+            <img
+              src={require('../../assets/uploads/goods_5.jpg').default}
+              alt=""
+            />
+            <span className={styles.price}>￥12.82</span>
+            <span>预计收入1.80元</span>
+            <button>上架</button>
+          </a>
+          <a href="#!">
+            <img
+              src={require('../../assets/uploads/goods_6.jpg').default}
+              alt=""
+            />
+            <span className={styles.price}>￥12.82</span>
+            <span>预计收入1.80元</span>
+            <button>上架</button>
+          </a>
+          <a href="#!">
+            <img
+              src={require('../../assets/uploads/goods_4.jpg').default}
+              alt=""
+            />
+            <span className={styles.price}>￥12.82</span>
+            <span>预计收入1.80元</span>
+            <button>上架</button>
+          </a>
+          <a href="#!">
+            <img
+              src={require('../../assets/uploads/goods_5.jpg').default}
+              alt=""
+            />
+            <span className={styles.price}>￥12.82</span>
+            <span>预计收入1.80元</span>
+            <button>上架</button>
+          </a>
+        </div>
+      </div>
     </>
   );
 }

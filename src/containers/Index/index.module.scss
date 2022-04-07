@@ -23,6 +23,7 @@
 
     span {
       display: block;
+      min-width: 36px;
       font-size: 12px;
       color: #858d95;
     }
@@ -53,10 +54,9 @@
 
 .main {
   display: grid;
-  grid-template-columns: 700px auto;
-  grid-template-rows: 700px 380px;
+  grid-template-columns: 600px auto;
   grid-gap: 30px;
-  margin-top: 30px;
+  margin: 30px 0;
 
   .title {
     line-height: 1;
@@ -71,7 +71,7 @@
 .overview {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: 150px auto;
+  grid-template-rows: 140px auto;
   grid-gap: 30px;
 
   .users {
@@ -80,7 +80,6 @@
   }
 
   .profit {
-    margin-left: 5px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
   }
@@ -90,7 +89,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 40px;
     cursor: pointer;
 
     &:hover {
@@ -112,7 +110,7 @@
     }
 
     .icons {
-      margin-right: 1px;
+      margin-right: -10px;
     }
 
     img {
@@ -305,7 +303,6 @@
   padding: 20px 40px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  margin-left: 5px;
 
   .report {
     padding-top: 0;
@@ -376,10 +373,6 @@
 // 新品入库
 .goods {
   padding: 20px 40px;
-  grid-row-start: 2;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  margin-top: 10px;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 
@@ -475,10 +468,15 @@
 // 适配小尺寸屏幕
 @media screen and (max-width: 1280px) {
   .main {
-    grid-template-columns: 600px auto;
+    display: block;
   }
-  .main .overview .users,
-  .main .overview .profit {
-    padding: 0 20px;
+  .realtime,
+  .goods {
+    margin-top: 30px;
+  }
+
+  .overview .users .icons,
+  .overview .profit .icons {
+    margin-right: 0px;
   }
 }
