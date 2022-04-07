@@ -23,7 +23,7 @@ export default function Sidebar(): JSX.Element {
         {
           icon: '',
           text: '选品入库',
-          path: 'goods/add',
+          path: 'goods/checkin',
         },
         {
           icon: '',

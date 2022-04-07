@@ -1,0 +1,189 @@
+.panel {
+  display: flex;
+  padding: 30px 24px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.actions {
+  flex: 1;
+  font-size: 14px;
+
+  ul {
+    overflow: hidden;
+  }
+
+  li {
+    min-height: 40px;
+    line-height: 40px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .label {
+    padding-left: 30px;
+    position: absolute;
+    left: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 30px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+  }
+
+  .item {
+    display: flex;
+    float: left;
+  }
+
+  .text {
+    margin: 0 15px;
+  }
+
+  .input,
+  .select {
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+    border-radius: 4px;
+  }
+
+  .select {
+    cursor: pointer;
+    padding-right: 40px;
+    color: #999;
+    font-weight: normal;
+
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+
+  .selectd {
+    color: #171c49;
+  }
+
+  input {
+    color: #171c49;
+    font-size: inherit;
+  }
+
+  .sort {
+    .item {
+      position: relative;
+    }
+
+    .cursor {
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 86px;
+      height: 30px;
+      border-radius: 30px;
+      background-color: #213dc0;
+      z-index: -1;
+      transition: left 0.3s;
+    }
+
+    .active {
+      color: #fff;
+    }
+
+    span {
+      cursor: pointer;
+    }
+
+    .label::before {
+      background-image: url(../../assets/images/sort.png);
+    }
+  }
+
+  .filter {
+    .label::before {
+      background-image: url(../../assets/images/filter.png);
+    }
+
+    .input {
+      width: 166px;
+    }
+  }
+
+  .search {
+    .label::before {
+      background-image: url(../../assets/images/search.png);
+    }
+    .input {
+      width: 330px;
+    }
+  }
+
+  // 按钮们
+  .buttons {
+    display: flex;
+
+    a {
+      width: 80px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      margin-right: 24px;
+      border-radius: 4px;
+      color: #fff;
+    }
+
+    .slideup {
+      background-color: #171c49;
+    }
+
+    .reset {
+      background-color: #ffc306;
+    }
+
+    .submit {
+      background-color: #213dc0;
+    }
+  }
+}
+
+.charts {
+  display: flex;
+  width: 500px;
+  padding-top: 24px;
+
+  .today,
+  .total {
+    width: 50%;
+  }
+
+  h5 {
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  strong {
+    line-height: 1;
+    font-size: 32px;
+  }
+
+  .chart {
+    width: 200px;
+    height: 120px;
+    margin-top: 10px;
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .filter .item:last-child {
+    margin-top: 30px;
+  }
+}

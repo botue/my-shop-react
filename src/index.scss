@@ -44,10 +44,20 @@ strong {
   font-weight: 700;
 }
 
-button {
+button,
+input {
   padding: 0;
   border: 0;
   outline: none;
+}
+
+input {
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+  color: #999;
+  opacity: 1;
 }
 
 img {

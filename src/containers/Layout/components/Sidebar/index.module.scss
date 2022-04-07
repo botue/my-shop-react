@@ -24,7 +24,7 @@
   a {
     display: block;
     line-height: 1;
-    padding: 18px 0 18px 76px;
+    padding: 18px 0 18px 75px;
     font-size: 14px;
     font-weight: 700;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@
       }
 
       a {
-        padding-left: 90px;
+        padding-left: 75px;
         background-position: 0 0;
 
         &:hover,
@@ -62,7 +62,7 @@
   }
 }
 
-@each $name in "home", "menu", "list", "bell", "folder", "user", "expand" {
+@each $name in 'home', 'menu', 'list', 'bell', 'folder', 'user', 'expand' {
   :global(.icon-#{$name}) {
     background-image: url(../../../../assets/images/#{$name}_default.png);
 
