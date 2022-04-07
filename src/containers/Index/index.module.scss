@@ -54,7 +54,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: 600px auto;
+  grid-template-columns: 45% 55%;
   grid-gap: 30px;
   margin: 30px 0;
 
@@ -477,6 +477,6 @@
 
   .overview .users .icons,
   .overview .profit .icons {
-    margin-right: 0px;
+    margin-right: 5px;
   }
 }
