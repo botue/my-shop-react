@@ -17,7 +17,6 @@
     min-height: 40px;
     line-height: 40px;
     padding-left: 70px;
-    margin-bottom: 30px;
     position: relative;
     overflow: hidden;
   }
@@ -41,11 +40,16 @@
 
   .item {
     display: flex;
-    float: left;
+    margin-bottom: 30px;
   }
 
   .text {
     margin: 0 15px;
+  }
+
+  .hyphen {
+    margin: 0 6px;
+    color: #999;
   }
 
   .input,
@@ -61,10 +65,6 @@
     padding-right: 40px;
     color: #999;
     font-weight: normal;
-
-    &:last-child {
-      margin-left: 20px;
-    }
   }
 
   .selectd {
@@ -72,6 +72,7 @@
   }
 
   input {
+    height: 16px;
     color: #171c49;
     font-size: inherit;
   }
@@ -112,7 +113,7 @@
     }
 
     .input {
-      width: 166px;
+      width: 155px;
     }
   }
 
@@ -121,7 +122,7 @@
       background-image: url(../../assets/images/search.png);
     }
     .input {
-      width: 330px;
+      width: 328px;
     }
   }
 
@@ -155,12 +156,13 @@
 
 .charts {
   display: flex;
-  width: 500px;
+  width: 460px;
   padding-top: 24px;
 
   .today,
   .total {
     width: 50%;
+    padding-left: 30px;
   }
 
   h5 {
@@ -175,15 +177,14 @@
   }
 
   .chart {
-    width: 200px;
+    width: 180px;
     height: 120px;
-    margin-top: 10px;
-    background-color: pink;
+    margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 1280px) {
-  .filter .item:last-child {
-    margin-top: 30px;
+@media screen and (max-width: 1279px) {
+  .charts {
+    display: none;
   }
 }
