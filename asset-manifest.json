@@ -1,26 +1,19 @@
 {
   "files": {
-    "main.css": "/my-shop-react/static/css/main.7b3f0fab.chunk.css",
-    "main.js": "/my-shop-react/static/js/main.2e21ac1c.chunk.js",
-    "main.js.map": "/my-shop-react/static/js/main.2e21ac1c.chunk.js.map",
-    "runtime-main.js": "/my-shop-react/static/js/runtime-main.b298f95b.js",
-    "runtime-main.js.map": "/my-shop-react/static/js/runtime-main.b298f95b.js.map",
-    "static/js/2.46ca1cf7.chunk.js": "/my-shop-react/static/js/2.46ca1cf7.chunk.js",
-    "static/js/2.46ca1cf7.chunk.js.map": "/my-shop-react/static/js/2.46ca1cf7.chunk.js.map",
+    "main.css": "/my-shop-react/static/css/main.2b84e82a.css",
+    "main.js": "/my-shop-react/static/js/main.99c20d23.js",
+    "static/media/goods_6.jpg": "/my-shop-react/static/media/goods_6.1dc7acebfa05ddefd8ad.jpg",
+    "static/media/goods_2.jpg": "/my-shop-react/static/media/goods_2.7b6e471ca3b916d5d87f.jpg",
+    "static/media/goods_1.jpg": "/my-shop-react/static/media/goods_1.c9ad5b6db269dc86eb76.jpg",
+    "static/media/goods_5.jpg": "/my-shop-react/static/media/goods_5.4ed1f8cc76a3e6624e41.jpg",
+    "static/media/goods_3.jpg": "/my-shop-react/static/media/goods_3.0a94dd824ab46ad05dc6.jpg",
+    "static/media/goods_4.jpg": "/my-shop-react/static/media/goods_4.41be2cb56ad39883a125.jpg",
     "index.html": "/my-shop-react/index.html",
-    "static/css/main.7b3f0fab.chunk.css.map": "/my-shop-react/static/css/main.7b3f0fab.chunk.css.map",
-    "static/js/2.46ca1cf7.chunk.js.LICENSE.txt": "/my-shop-react/static/js/2.46ca1cf7.chunk.js.LICENSE.txt",
-    "static/media/goods_1.jpg": "/my-shop-react/static/media/goods_1.c9ad5b6d.jpg",
-    "static/media/goods_2.jpg": "/my-shop-react/static/media/goods_2.7b6e471c.jpg",
-    "static/media/goods_3.jpg": "/my-shop-react/static/media/goods_3.0a94dd82.jpg",
-    "static/media/goods_4.jpg": "/my-shop-react/static/media/goods_4.41be2cb5.jpg",
-    "static/media/goods_5.jpg": "/my-shop-react/static/media/goods_5.4ed1f8cc.jpg",
-    "static/media/goods_6.jpg": "/my-shop-react/static/media/goods_6.1dc7aceb.jpg"
+    "main.2b84e82a.css.map": "/my-shop-react/static/css/main.2b84e82a.css.map",
+    "main.99c20d23.js.map": "/my-shop-react/static/js/main.99c20d23.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.b298f95b.js",
-    "static/js/2.46ca1cf7.chunk.js",
-    "static/css/main.7b3f0fab.chunk.css",
-    "static/js/main.2e21ac1c.chunk.js"
+    "static/css/main.2b84e82a.css",
+    "static/js/main.99c20d23.js"
   ]
 }
