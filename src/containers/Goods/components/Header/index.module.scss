@@ -1,4 +1,4 @@
-.panel {
+.header {
   display: flex;
   padding: 30px 24px;
   box-shadow: var(--box-shadow);
@@ -109,13 +109,13 @@
     }
 
     .label::before {
-      background-image: url(../../assets/images/sort.png);
+      background-image: url(../../../../assets/images/sort.png);
     }
   }
 
   .filter {
     .label::before {
-      background-image: url(../../assets/images/filter.png);
+      background-image: url(../../../../assets/images/filter.png);
     }
 
     .input {
@@ -125,7 +125,7 @@
 
   .search {
     .label::before {
-      background-image: url(../../assets/images/search.png);
+      background-image: url(../../../../assets/images/search.png);
     }
     .input {
       width: 328px;
