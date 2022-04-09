@@ -7,7 +7,7 @@ import styles from './index.module.scss';
 export default function Panel(): JSX.Element {
   return (
     <>
-      <div className={styles.header}>
+      <div className={styles.panel}>
         {/* 用户操作 */}
         <div className={styles.actions}>
           <ul>
