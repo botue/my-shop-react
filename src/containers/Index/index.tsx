@@ -1,25 +1,12 @@
 import styles from './index.module.scss';
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios';
 
 export default function Index(): JSX.Element {
-  // 创建 ref 获取 cards 盒子的 DOM
-  const cardsRef = useRef<HTMLInputElement>(null);
-
   useEffect(() => {
     axios.get('/api/test').then((res) => {
       console.log(res);
     });
-
-    // 动态设置 .cards 盒子的宽度
-    if (cardsRef.current && cardsRef.current.parentNode) {
-      // const parentNode = cardsRef.current.parentNode as HTMLElement;
-      // const { paddingLeft } = getComputedStyle(parentNode);
-      // const { clientWidth } = parentNode;
-      // // 计算盒子的实际宽度
-      // cardsRef.current.style.width =
-      //   clientWidth - 2 * parseFloat(paddingLeft) + 'px';
-    }
   });
 
   return (
@@ -51,11 +38,11 @@ export default function Index(): JSX.Element {
           <section className={styles.users}>
             <div className={styles.icons}>
               <img
-                src={require('../../assets/images/user_slice_1.png').default}
+                src={require('../../assets/images/user_slice_1.png')}
                 alt=""
               />
               <img
-                src={require('../../assets/images/user_slice_2.png').default}
+                src={require('../../assets/images/user_slice_2.png')}
                 alt=""
               />
             </div>
@@ -71,11 +58,11 @@ export default function Index(): JSX.Element {
           <section className={styles.profit}>
             <div className={styles.icons}>
               <img
-                src={require('../../assets/images/user_slice_1.png').default}
+                src={require('../../assets/images/user_slice_1.png')}
                 alt=""
               />
               <img
-                src={require('../../assets/images/user_slice_2.png').default}
+                src={require('../../assets/images/user_slice_2.png')}
                 alt=""
               />
             </div>
@@ -214,10 +201,7 @@ export default function Index(): JSX.Element {
                   <li>
                     <span>
                       <img
-                        src={
-                          require('../../assets/uploads/user_avatar_2.png')
-                            .default
-                        }
+                        src={require('../../assets/uploads/user_avatar_2.png')}
                         alt=""
                       />
                     </span>
@@ -232,10 +216,7 @@ export default function Index(): JSX.Element {
                   <li>
                     <span>
                       <img
-                        src={
-                          require('../../assets/uploads/user_avatar_1.png')
-                            .default
-                        }
+                        src={require('../../assets/uploads/user_avatar_1.png')}
                         alt=""
                       />
                     </span>
@@ -250,10 +231,7 @@ export default function Index(): JSX.Element {
                   <li>
                     <span>
                       <img
-                        src={
-                          require('../../assets/uploads/user_avatar_2.png')
-                            .default
-                        }
+                        src={require('../../assets/uploads/user_avatar_2.png')}
                         alt=""
                       />
                     </span>
@@ -268,10 +246,7 @@ export default function Index(): JSX.Element {
                   <li>
                     <span>
                       <img
-                        src={
-                          require('../../assets/uploads/user_avatar_3.png')
-                            .default
-                        }
+                        src={require('../../assets/uploads/user_avatar_3.png')}
                         alt=""
                       />
                     </span>
@@ -286,10 +261,7 @@ export default function Index(): JSX.Element {
                   <li>
                     <span>
                       <img
-                        src={
-                          require('../../assets/uploads/user_avatar_1.png')
-                            .default
-                        }
+                        src={require('../../assets/uploads/user_avatar_1.png')}
                         alt=""
                       />
                     </span>
@@ -304,10 +276,7 @@ export default function Index(): JSX.Element {
                   <li>
                     <span>
                       <img
-                        src={
-                          require('../../assets/uploads/user_avatar_2.png')
-                            .default
-                        }
+                        src={require('../../assets/uploads/user_avatar_2.png')}
                         alt=""
                       />
                     </span>
@@ -322,10 +291,7 @@ export default function Index(): JSX.Element {
                   <li>
                     <span>
                       <img
-                        src={
-                          require('../../assets/uploads/user_avatar_3.png')
-                            .default
-                        }
+                        src={require('../../assets/uploads/user_avatar_3.png')}
                         alt=""
                       />
                     </span>
@@ -340,10 +306,7 @@ export default function Index(): JSX.Element {
                   <li>
                     <span>
                       <img
-                        src={
-                          require('../../assets/uploads/user_avatar_1.png')
-                            .default
-                        }
+                        src={require('../../assets/uploads/user_avatar_1.png')}
                         alt=""
                       />
                     </span>
@@ -364,75 +327,51 @@ export default function Index(): JSX.Element {
       {/* 新品入库 */}
       <div className={styles.goods}>
         <h5 className={styles.title}>新品入库</h5>
-        <div className={styles.cards} ref={cardsRef}>
+        <div className={styles.cards}>
           <a href="#!">
-            <img
-              src={require('../../assets/uploads/goods_1.jpg').default}
-              alt=""
-            />
+            <img src={require('../../assets/uploads/goods_1.jpg')} alt="" />
             <span className={styles.price}>￥12.82</span>
             <span>预计收入1.80元</span>
             <button>上架</button>
           </a>
           <a href="#!">
-            <img
-              src={require('../../assets/uploads/goods_2.jpg').default}
-              alt=""
-            />
+            <img src={require('../../assets/uploads/goods_2.jpg')} alt="" />
             <span className={styles.price}>￥12.82</span>
             <span>预计收入1.80元</span>
             <button>上架</button>
           </a>
           <a href="#!">
-            <img
-              src={require('../../assets/uploads/goods_3.jpg').default}
-              alt=""
-            />
+            <img src={require('../../assets/uploads/goods_3.jpg')} alt="" />
             <span className={styles.price}>￥12.82</span>
             <span>预计收入1.80元</span>
             <button>上架</button>
           </a>
           <a href="#!">
-            <img
-              src={require('../../assets/uploads/goods_4.jpg').default}
-              alt=""
-            />
+            <img src={require('../../assets/uploads/goods_4.jpg')} alt="" />
             <span className={styles.price}>￥12.82</span>
             <span>预计收入1.80元</span>
             <button>上架</button>
           </a>
           <a href="#!">
-            <img
-              src={require('../../assets/uploads/goods_5.jpg').default}
-              alt=""
-            />
+            <img src={require('../../assets/uploads/goods_5.jpg')} alt="" />
             <span className={styles.price}>￥12.82</span>
             <span>预计收入1.80元</span>
             <button>上架</button>
           </a>
           <a href="#!">
-            <img
-              src={require('../../assets/uploads/goods_6.jpg').default}
-              alt=""
-            />
+            <img src={require('../../assets/uploads/goods_6.jpg')} alt="" />
             <span className={styles.price}>￥12.82</span>
             <span>预计收入1.80元</span>
             <button>上架</button>
           </a>
           <a href="#!">
-            <img
-              src={require('../../assets/uploads/goods_4.jpg').default}
-              alt=""
-            />
+            <img src={require('../../assets/uploads/goods_4.jpg')} alt="" />
             <span className={styles.price}>￥12.82</span>
             <span>预计收入1.80元</span>
             <button>上架</button>
           </a>
           <a href="#!">
-            <img
-              src={require('../../assets/uploads/goods_5.jpg').default}
-              alt=""
-            />
+            <img src={require('../../assets/uploads/goods_5.jpg')} alt="" />
             <span className={styles.price}>￥12.82</span>
             <span>预计收入1.80元</span>
             <button>上架</button>
