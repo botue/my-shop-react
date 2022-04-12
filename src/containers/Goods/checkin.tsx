@@ -261,6 +261,48 @@ export default function Checkin(): JSX.Element {
           </div>
         </div>
       </div>
+      <div className={styles.actions}>
+        <div className={styles.wrap}>
+          <span className={styles.title}>快捷操作</span>
+          <label htmlFor="">
+            <input type="checkbox" /> 今日入库
+          </label>
+          <label htmlFor="">
+            <input type="checkbox" /> 当前页面
+          </label>
+          <label htmlFor="">
+            <input type="checkbox" /> 筛选结果
+          </label>
+          <label htmlFor="">
+            <input type="checkbox" /> 所有商品
+          </label>
+          <span className={styles.total}>已选中 59 件，共 8982 条数据</span>
+        </div>
+        <a href="#!" className={styles.button}>
+          一键入库
+        </a>
+      </div>
+      {/* 分页 */}
+      <div className={styles.pagnation}>
+        <a href="#!" className={styles.button}>
+          上一页
+        </a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a className={styles.active} href="#">
+          3
+        </a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#!" className={styles.button}>
+          下一页
+        </a>
+      </div>
     </>
   );
 }

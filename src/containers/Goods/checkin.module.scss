@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 230px);
   margin-top: 40px;
-  padding-left: 26px;
 }
 
 .goods .item {
@@ -116,4 +115,83 @@
     opacity: 1;
     transition: all 0.1s 0.2s;
   }
+}
+
+.actions {
+  display: flex;
+  height: 80px;
+  line-height: 50px;
+  padding-bottom: 30px;
+  margin: 20px 0 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.actions .wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 14px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+.actions .title {
+  margin-right: 40px;
+  padding-left: 36px;
+  background: url(../../assets/images/mouse.png) no-repeat left center/28px;
+}
+
+.actions label {
+  margin-right: 20px;
+}
+
+.actions .total {
+  font-size: 16px;
+}
+
+.actions .button {
+  display: block;
+  width: 120px;
+  text-align: center;
+  margin-left: 30px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #171c49;
+  border-radius: 4px;
+}
+
+.pagnation {
+  display: flex;
+  // justify-content: center;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.pagnation .button {
+  width: 120px;
+  display: block;
+  color: #fff;
+  background-color: #171c49;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+
+  &:first-of-type {
+    margin-right: 15px;
+  }
+
+  &:last-of-type {
+    margin-left: 15px;
+  }
+}
+
+.pagnation a:not(.button) {
+  padding: 0 10px;
+  text-decoration: underline;
+  color: #171c49;
+  font-size: 16px;
+}
+
+.pagnation a.active {
+  color: #213dc0;
 }
