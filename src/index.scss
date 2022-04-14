@@ -65,6 +65,10 @@ img {
   vertical-align: middle;
 }
 
+// table {
+//   table-layout: fixed;
+// }
+
 /**
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
@@ -90,6 +94,14 @@ img {
   */
 .clearfix {
   *zoom: 1;
+}
+
+.text-overflow {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 :root {
