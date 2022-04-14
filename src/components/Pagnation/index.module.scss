@@ -1,0 +1,35 @@
+.pagnation {
+  display: flex;
+  // justify-content: center;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.pagnation .button {
+  width: 120px;
+  display: block;
+  color: #fff;
+  background-color: #171c49;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+
+  &:first-of-type {
+    margin-right: 15px;
+  }
+
+  &:last-of-type {
+    margin-left: 15px;
+  }
+}
+
+.pagnation a:not(.button) {
+  padding: 0 10px;
+  text-decoration: underline;
+  color: #171c49;
+  font-size: 16px;
+}
+
+.pagnation a.active {
+  color: #213dc0;
+}
