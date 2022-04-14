@@ -1,7 +1,10 @@
 .goods {
   display: grid;
   grid-template-columns: repeat(auto-fill, 230px);
-  margin-top: 40px;
+  padding: 30px 0 10px;
+  margin: 40px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .goods .item {
@@ -119,11 +122,13 @@
 
 .actions {
   display: flex;
-  height: 80px;
+  height: 50px;
   line-height: 50px;
-  padding-bottom: 30px;
-  margin: 20px 0 40px;
-  border-bottom: 1px solid #eee;
+  margin-top: 40px;
+  // background-color: #fff;
+  // position: sticky;
+  // top: 60px;
+  // z-index: 99;
 }
 
 .actions .wrap {

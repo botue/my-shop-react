@@ -7,6 +7,27 @@ export default function Checkin(): JSX.Element {
   return (
     <>
       <Header />
+      <div className={styles.actions}>
+        <div className={styles.wrap}>
+          <span className={styles.title}>快捷操作</span>
+          <label htmlFor="">
+            <input type="checkbox" /> 今日入库
+          </label>
+          <label htmlFor="">
+            <input type="checkbox" /> 当前页面
+          </label>
+          <label htmlFor="">
+            <input type="checkbox" /> 筛选结果
+          </label>
+          <label htmlFor="">
+            <input type="checkbox" /> 所有商品
+          </label>
+          <span className={styles.total}>已选中 59 件，共 8982 条数据</span>
+        </div>
+        <a href="#!" className={styles.button}>
+          一键入库
+        </a>
+      </div>
       <div className={styles.goods}>
         <div className={styles.item}>
           <img
@@ -261,27 +282,7 @@ export default function Checkin(): JSX.Element {
           </div>
         </div>
       </div>
-      <div className={styles.actions}>
-        <div className={styles.wrap}>
-          <span className={styles.title}>快捷操作</span>
-          <label htmlFor="">
-            <input type="checkbox" /> 今日入库
-          </label>
-          <label htmlFor="">
-            <input type="checkbox" /> 当前页面
-          </label>
-          <label htmlFor="">
-            <input type="checkbox" /> 筛选结果
-          </label>
-          <label htmlFor="">
-            <input type="checkbox" /> 所有商品
-          </label>
-          <span className={styles.total}>已选中 59 件，共 8982 条数据</span>
-        </div>
-        <a href="#!" className={styles.button}>
-          一键入库
-        </a>
-      </div>
+
       {/* 分页 */}
       <div className={styles.pagnation}>
         <a href="#!" className={styles.button}>
