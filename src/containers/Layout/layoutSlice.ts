@@ -16,8 +16,11 @@ export const layoutSlice = createSlice({
     toggleSidebar: (state) => {
       state.collapsed = !state.collapsed;
     },
+    collapseSidebar: (state) => {
+      state.collapsed = false;
+    },
   },
 });
 
-export const { toggleSidebar } = layoutSlice.actions;
+export const { toggleSidebar, collapseSidebar } = layoutSlice.actions;
 export default layoutSlice.reducer;

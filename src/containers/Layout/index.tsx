@@ -1,5 +1,10 @@
-import { Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useRoutes, useLocation } from 'react-router-dom';
+import type { RouteObject } from 'react-router-dom';
 import { useAppSelector } from '@/redux/hooks';
+
+import { useAppDispatch } from '../../redux/hooks';
+import { toggleSidebar, collapseSidebar } from './layoutSlice';
 
 // 布局结构
 import Header from './components/Header';
@@ -21,6 +26,35 @@ export default function Layout(): JSX.Element {
     return state.collapsed;
   });
 
+  const { pathname } = useLocation();
+
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(collapseSidebar());
+  }, [pathname]);
+
+  const routes: RouteObject[] = [
+    {
+      path: '/',
+      element: <Index />,
+    },
+    {
+      path: 'goods/checkin',
+      element: <GoodsCheckin />,
+    },
+    {
+      path: 'goods/list',
+      element: <GoodsList />,
+    },
+    {
+      path: 'goods/category',
+      element: <GoodsCategory />,
+    },
+  ];
+
+  const element = useRoutes(routes);
+
   return (
     <div className={[styles.base, !collapsed || styles.collapsed].join(' ')}>
       <div className={styles.sidebar}>
@@ -30,14 +64,7 @@ export default function Layout(): JSX.Element {
         <div className={styles.header}>
           <Header />
         </div>
-        <div className={styles.body}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/goods/checkin" element={<GoodsCheckin />} />
-            <Route path="/goods/list" element={<GoodsList />} />
-            <Route path="/goods/category" element={<GoodsCategory />} />
-          </Routes>
-        </div>
+        <div className={styles.body}>{element}</div>
       </div>
     </div>
   );
