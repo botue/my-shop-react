@@ -4,7 +4,7 @@ import type { RouteObject } from 'react-router-dom';
 import { useAppSelector } from '@/redux/hooks';
 
 import { useAppDispatch } from '../../redux/hooks';
-import { toggleSidebar, collapseSidebar } from './layoutSlice';
+import { collapseSidebar } from './layoutSlice';
 
 // 布局结构
 import Header from './components/Header';
@@ -27,10 +27,10 @@ export default function Layout(): JSX.Element {
   });
 
   const { pathname } = useLocation();
-
   const dispatch = useAppDispatch();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     dispatch(collapseSidebar());
   }, [pathname]);
 
