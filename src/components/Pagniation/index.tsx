@@ -1,6 +1,8 @@
 import { Pagination as AntPagination, Button } from 'antd';
 
-export default function Pagination(props: any): JSX.Element {
+import { PaginationProps } from 'antd/lib/pagination/Pagination.d';
+
+export default function Pagination(props: PaginationProps): JSX.Element {
   return (
     <AntPagination
       itemRender={(_current, type, originalElement) => {
