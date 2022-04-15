@@ -1,21 +1,9 @@
 .actions {
   display: flex;
-  height: 50px;
-  line-height: 50px;
-  margin-top: 40px;
-  // background-color: #fff;
-  // position: sticky;
-  // top: 60px;
-  // z-index: 99;
-}
-
-.actions .wrap {
-  display: flex;
-  align-items: center;
+  height: 36px;
+  line-height: 36px;
   padding: 0 30px;
-  font-size: 14px;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
+  margin-top: 40px;
 }
 
 .actions .title {
@@ -32,17 +20,6 @@
   font-size: 16px;
 }
 
-.actions .button {
-  display: block;
-  width: 120px;
-  text-align: center;
-  margin-left: 30px;
-  color: #fff;
-  font-size: 14px;
-  background-color: #171c49;
-  border-radius: 4px;
-}
-
 .stocklist {
   margin: 40px 0;
 }
@@ -50,24 +27,24 @@
 .stocklist table {
   width: 100%;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  font-weight: normal;
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
 }
 
-.stocklist td,
-.stocklist th {
-  padding: 10px;
+.stocklist tr:last-child td {
+  border-bottom: none;
 }
 
 .stocklist th {
-  font-size: 14px;
+  text-align: center !important;
+  font-weight: 700 !important;
 }
 
-.stocklist td {
-  height: 60px;
-  font-size: 13px;
-  font-weight: normal;
+.stocklist th::before {
+  display: none;
 }
 
 .stocklist img {
@@ -75,26 +52,6 @@
   height: 40px;
 }
 
-.stocklist :global(.text-overflow) {
-  // -webkit-line-clamp: 3;
-  // min-width: 100px;
-  cursor: pointer;
-}
-
-.stocklist .button {
-  display: inline-block;
-  width: 70px;
-  height: 30px;
-  line-height: 30px;
-  margin: 5px;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.stocklist .danger {
-  background-color: #f56c6c;
-}
-
-.stocklist .info {
-  background-color: #171c49;
+.stocklist :global(.ant-btn-dangerous) {
+  margin-left: 10px;
 }

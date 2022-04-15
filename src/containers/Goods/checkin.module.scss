@@ -62,7 +62,6 @@
 .goods .name {
   line-height: 1.4;
   margin-bottom: 20px;
-  font-size: 14px;
   font-weight: normal;
 }
 
@@ -122,22 +121,10 @@
 
 .actions {
   display: flex;
-  height: 50px;
-  line-height: 50px;
-  margin-top: 40px;
-  // background-color: #fff;
-  // position: sticky;
-  // top: 60px;
-  // z-index: 99;
-}
-
-.actions .wrap {
-  display: flex;
-  align-items: center;
+  height: 36px;
+  line-height: 36px;
   padding: 0 30px;
-  font-size: 14px;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
+  margin-top: 40px;
 }
 
 .actions .title {
@@ -152,15 +139,4 @@
 
 .actions .total {
   font-size: 16px;
-}
-
-.actions .button {
-  display: block;
-  width: 120px;
-  text-align: center;
-  margin-left: 30px;
-  color: #fff;
-  font-size: 14px;
-  background-color: #171c49;
-  border-radius: 4px;
 }
