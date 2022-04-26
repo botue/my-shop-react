@@ -1,7 +1,7 @@
 // AntV 可视化库
 import { Chart, Area, LineAdvance, Tooltip, Axis } from 'bizcharts';
 
-import { Button, Input, Select, Checkbox } from 'antd';
+import { Button, Input, Select } from 'antd';
 
 // 样式表
 import styles from './index.module.scss';
