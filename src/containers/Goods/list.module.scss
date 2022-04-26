@@ -22,25 +22,25 @@
 
 .stocklist {
   margin: 40px 0;
+  padding: 10px 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
 }
 
 .stocklist table {
   width: 100%;
   text-align: center;
-  padding: 10px 20px;
-  margin-bottom: 40px;
   font-weight: normal;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
 }
 
 .stocklist tr:last-child td {
-  border-bottom: none;
+  // border-bottom: none;
 }
 
 .stocklist th {
   text-align: center !important;
   font-weight: 700 !important;
+  background-color: #fff !important;
 }
 
 .stocklist th::before {

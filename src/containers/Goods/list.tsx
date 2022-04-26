@@ -62,6 +62,8 @@ export default function List(): JSX.Element {
     },
     {
       title: '操作',
+      width: 210,
+      fixed: 'right' as const,
       render: () => {
         return (
           <>
@@ -250,6 +252,7 @@ export default function List(): JSX.Element {
             type: 'checkbox',
           }}
           columns={columns}
+          scroll={{ x: 1400 }}
           dataSource={data}
           pagination={{
             pageSize: 3,
