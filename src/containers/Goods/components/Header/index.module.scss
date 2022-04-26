@@ -39,6 +39,7 @@
 
   .item {
     display: flex;
+    align-items: center;
     margin-bottom: 30px;
   }
 
@@ -48,43 +49,16 @@
 
   .hyphen {
     margin: 0 6px;
-    color: #999;
-  }
-
-  .input,
-  .select {
-    height: 36px;
-    border: 1px solid #ddd;
-    padding: 0 15px;
-    border-radius: 4px;
-  }
-
-  .input {
-    padding-top: 10px;
-  }
-
-  .select {
-    cursor: pointer;
-    padding-right: 40px;
-    color: #999;
-    font-weight: normal;
-  }
-
-  .selectd {
-    color: #171c49;
-  }
-
-  input {
-    display: block;
-    height: 16px;
-    line-height: 16px;
-    color: #171c49;
-    font-size: inherit;
+    color: var(--text-light-color);
   }
 
   .sort {
     .item {
       position: relative;
+    }
+
+    span {
+      cursor: pointer;
     }
 
     .cursor {
@@ -94,17 +68,13 @@
       width: 86px;
       height: 30px;
       border-radius: 30px;
-      background-color: #213dc0;
+      background-color: var(--primary-color);
       z-index: -1;
       transition: left 0.3s;
     }
 
     .active {
       color: #fff;
-    }
-
-    span {
-      cursor: pointer;
     }
 
     .label::before {
@@ -116,45 +86,18 @@
     .label::before {
       background-image: url(../../../../assets/images/filter.png);
     }
-
-    .input {
-      width: 155px;
-    }
   }
 
   .search {
     .label::before {
       background-image: url(../../../../assets/images/search.png);
     }
-    .input {
-      width: 328px;
-    }
   }
 
   // 按钮们
   .buttons {
-    display: flex;
-
-    a {
-      width: 100px;
-      height: 36px;
-      text-align: center;
-      line-height: 36px;
+    button {
       margin-right: 30px;
-      border-radius: 4px;
-      color: #fff;
-    }
-
-    .slideup {
-      background-color: #171c49;
-    }
-
-    .reset {
-      background-color: #ffc306;
-    }
-
-    .submit {
-      background-color: #213dc0;
     }
   }
 }

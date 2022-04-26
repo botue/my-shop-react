@@ -6,7 +6,7 @@
   border-radius: 50%;
   box-shadow: 0px 5px 20px rgba(33, 61, 192, 0.4);
   box-sizing: border-box;
-  background-color: #20232a;
+  background-color: var(--text-color);
   overflow: hidden;
 
   img {
@@ -25,18 +25,17 @@
     display: block;
     line-height: 1;
     padding: 18px 0 18px 75px;
-    font-weight: 700;
+    font-weight: 600;
     background-repeat: no-repeat;
     background-position: 36px center, 0 0;
 
-    &:hover,
     &:global(.active) {
-      color: #213dc0;
+      color: var(--primary-color);
     }
 
     &:not(.label):hover,
     &:not(.label):global(.active) {
-      border-right: 4px solid #213dc0;
+      border-right: 4px solid var(--primary-color);
     }
 
     & + ul {

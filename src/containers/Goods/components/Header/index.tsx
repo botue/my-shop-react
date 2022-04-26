@@ -1,6 +1,8 @@
 // AntV 可视化库
 import { Chart, Area, LineAdvance, Tooltip, Axis } from 'bizcharts';
 
+import { Button, Input, Select, Checkbox } from 'antd';
+
 // 样式表
 import styles from './index.module.scss';
 
@@ -26,42 +28,40 @@ export default function Panel(): JSX.Element {
               <span className={styles.label}>筛选</span>
               <div className={styles.item}>
                 <span className={styles.text}>商品分类: </span>
-                <span className={styles.select}>请选择一级分类</span>
+                <Select placeholder="请选择一级分类" style={{ width: 155 }}>
+                  <Select.Option value="1">男装</Select.Option>
+                  <Select.Option value="2">女装</Select.Option>
+                </Select>
                 <span className={styles.hyphen}>-</span>
-                <span className={styles.select}>请选择二级分类</span>
+                <Select placeholder="请选择二级分类" style={{ width: 155 }}>
+                  <Select.Option value="11">衬衫</Select.Option>
+                  <Select.Option value="12">裙子</Select.Option>
+                  <Select.Option value="13">裤子</Select.Option>
+                </Select>
               </div>
               <div className={styles.item}>
                 <span className={styles.text}>价格区间: </span>
-                <span className={styles.input}>
-                  <input type="text" placeholder="请输入最低金额" />
-                </span>
+                <Input style={{ width: 155 }} placeholder="请输入最低金额" />
                 <span className={styles.hyphen}>-</span>
-                <span className={styles.input}>
-                  <input type="text" placeholder="请输入最高金额" />
-                </span>
+                <Input style={{ width: 155 }} placeholder="请输入最高金额" />
               </div>
             </li>
             <li className={styles.search}>
               <span className={styles.label}>搜索</span>
               <div className={styles.item}>
                 <span className={styles.text}>精准搜索: </span>
-                <span className={styles.input}>
-                  <input type="text" placeholder="请输入商品名称或ID" />
-                </span>
+                <Input
+                  style={{ width: 328 }}
+                  placeholder="请输入商品名称或ID"
+                />
               </div>
             </li>
           </ul>
           {/* 操作按钮 */}
           <div className={styles.buttons}>
-            <a href="#!" className={styles.slideup}>
-              收起
-            </a>
-            <a href="#!" className={styles.reset}>
-              重置
-            </a>
-            <a href="#!" className={styles.submit}>
-              查询
-            </a>
+            <Button>收起</Button>
+            <Button>重置</Button>
+            <Button type="primary">查询</Button>
           </div>
         </div>
         {/* 可视化图表 */}
@@ -111,8 +111,8 @@ export default function Panel(): JSX.Element {
                   label={null}
                 />
                 <Axis name="year" />
-                <Area color={'#213dc0'} position="year*value" />
-                <LineAdvance point color={'#213dc0'} position="year*value" />
+                <Area color={'#4a62d2'} position="year*value" />
+                <LineAdvance point color={'#4a62d2'} position="year*value" />
               </Chart>
             </div>
           </div>

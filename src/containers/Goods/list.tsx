@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import { Table, Button, Input } from 'antd';
+import { Table, Button, Input, Checkbox } from 'antd';
 import { EditOutlined } from '@ant-design/icons';
 
 // 样式表
@@ -229,21 +229,13 @@ export default function List(): JSX.Element {
       <Header />
       <div className={styles.actions}>
         <span className={styles.title}>快捷操作</span>
-        <label htmlFor="">
-          <input type="checkbox" /> 今日入库
-        </label>
-        <label htmlFor="">
-          <input type="checkbox" /> 当前页面
-        </label>
-        <label htmlFor="">
-          <input type="checkbox" /> 筛选结果
-        </label>
-        <label htmlFor="">
-          <input type="checkbox" /> 所有商品
-        </label>
+        <Checkbox>今日入库</Checkbox>
+        <Checkbox>当前页面</Checkbox>
+        <Checkbox>筛选结果</Checkbox>
+        <Checkbox>所有商品</Checkbox>
         <span className={styles.total}>已选中 59 件，共 8982 条数据</span>
         <Button style={{ marginLeft: 20, width: 120 }} type="primary">
-          一键上架
+          一键入库
         </Button>
       </div>
       <div className={styles.stocklist}>

@@ -25,7 +25,7 @@
       display: block;
       min-width: 36px;
       font-size: 12px;
-      color: #858d95;
+      color: var(--text-light-color);
     }
   }
 
@@ -47,7 +47,7 @@
     }
 
     &:hover {
-      border-bottom: 4px solid #213dc0;
+      border-bottom: 4px solid var(--primary-color);
     }
   }
 }
@@ -110,6 +110,7 @@
     }
 
     .icons {
+      margin-top: 10px;
       margin-right: -10px;
     }
 
@@ -132,22 +133,20 @@
 
     strong {
       font-size: 36px;
-      margin-bottom: 5px;
     }
 
     small {
       font-size: 12px;
-      color: #171c49;
     }
 
     span {
-      color: #858d95;
+      color: var(--text-light-color);
     }
 
     a {
       display: none;
       text-decoration: underline;
-      color: #213dc0;
+      color: var(--primary-color);
     }
   }
 
@@ -169,7 +168,6 @@
       margin: 20px 0;
       padding: 0 10px;
       font-size: 12px;
-      color: #171c49;
     }
 
     .tabs {
@@ -195,17 +193,17 @@
 
         &:first-child {
           &::before {
-            border-color: #4a62d2;
+            border-color: var(--primary-color);
           }
 
           &.active::before {
-            background-color: #4a62d2;
+            background-color: var(--primary-color);
           }
         }
 
         &:last-child {
           &::before {
-            border-color: #ffc306;
+            border-color: var(--warning-color);
           }
 
           &.active::before {
@@ -215,10 +213,10 @@
 
         &:hover {
           &:first-child::before {
-            background-color: #4a62d2;
+            background-color: var(--primary-color);
           }
           &:last-child::before {
-            background-color: #ffc306;
+            background-color: var(--warning-color);
           }
         }
       }
@@ -228,7 +226,7 @@
       height: 60px;
       line-height: 60px;
       margin-bottom: 30px;
-      background-color: #ffc306;
+      background-color: var(--warning-color);
       border-radius: 10px;
       overflow: hidden;
       position: relative;
@@ -258,7 +256,7 @@
 
     .percent {
       height: 100%;
-      background-color: #213dc0;
+      background-color: var(--primary-color);
     }
 
     .bars {
@@ -325,15 +323,10 @@
 
     span {
       font-size: 14px;
-      color: #858d95;
+      color: var(--text-light-color);
       margin: 5px 0;
       display: block;
     }
-  }
-
-  .rate {
-    background-color: pink;
-    margin-top: -100px;
   }
 
   .orders {
@@ -358,7 +351,7 @@
 
     .thead {
       margin-bottom: 15px;
-      border-bottom: 3px solid #213dc0;
+      border-bottom: 3px solid var(--primary-color);
     }
 
     .wrapper {
@@ -388,7 +381,7 @@
     padding: 20px;
     text-align: center;
     font-size: 12px;
-    color: #171c49;
+    color: var(--text-color);
     position: relative;
     cursor: default;
 
@@ -448,7 +441,6 @@
       top: -5px;
       width: 50px;
       height: 50px;
-      background-color: #000;
       border-radius: 50%;
       background-image: url(../../assets/images/upload.png);
       background-repeat: no-repeat;
@@ -458,7 +450,7 @@
 
   .price {
     display: block;
-    margin: 15px 0 10px;
+    margin-top: 15px;
     font-size: 24px;
   }
 }

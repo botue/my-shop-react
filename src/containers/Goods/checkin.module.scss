@@ -2,15 +2,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, 230px);
   padding: 30px 0 10px;
-  margin: 40px 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  margin: 30px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .goods .item {
   height: 230px;
   margin: 0 20px 20px 0;
-  color: #171c49;
   cursor: pointer;
 
   position: relative;
@@ -98,7 +97,7 @@
   font-size: 18px;
   font-weight: 700;
   padding-top: 34px;
-  border-left: 1px solid #ffc306;
+  border-left: 1px solid var(--warning-color);
   background: url(../../assets/images/mark.png) no-repeat right top;
 }
 
@@ -123,7 +122,6 @@
   display: flex;
   height: 36px;
   line-height: 36px;
-  padding: 0 30px;
   margin-top: 40px;
 }
 
@@ -133,10 +131,7 @@
   background: url(../../assets/images/mouse.png) no-repeat left center/28px;
 }
 
-.actions label {
-  margin-right: 20px;
-}
-
 .actions .total {
-  font-size: 16px;
+  margin-left: 20px;
+  font-weight: 500;
 }

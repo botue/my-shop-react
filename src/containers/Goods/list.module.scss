@@ -2,7 +2,6 @@
   display: flex;
   height: 36px;
   line-height: 36px;
-  padding: 0 30px;
   margin-top: 40px;
 }
 
@@ -12,19 +11,14 @@
   background: url(../../assets/images/mouse.png) no-repeat left center/28px;
 }
 
-.actions label {
-  margin-right: 20px;
-}
-
 .actions .total {
-  font-size: 16px;
+  margin-left: 20px;
+  font-weight: 500;
 }
 
 .stocklist {
-  margin: 40px 0;
-  padding: 10px 20px;
-  box-shadow: var(--box-shadow);
-  border-radius: var(--border-radius);
+  margin: 30px 0 0;
+  border-top: 1px solid var(--border-color);
 }
 
 .stocklist table {
@@ -33,14 +27,9 @@
   font-weight: normal;
 }
 
-.stocklist tr:last-child td {
-  // border-bottom: none;
-}
-
 .stocklist th {
   text-align: center !important;
   font-weight: 700 !important;
-  background-color: #fff !important;
 }
 
 .stocklist th::before {
