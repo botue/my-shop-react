@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-shop-react/static/css/main.f8cc6d86.css",
-    "main.js": "/my-shop-react/static/js/main.8071bacd.js",
+    "main.css": "/my-shop-react/static/css/main.3a34010f.css",
+    "main.js": "/my-shop-react/static/js/main.1118dd49.js",
     "static/media/goods_20.jpg": "/my-shop-react/static/media/goods_20.abc6160d8fe96ac78d88.jpg",
     "static/media/goods_6.jpg": "/my-shop-react/static/media/goods_6.1dc7acebfa05ddefd8ad.jpg",
     "static/media/goods_14.jpg": "/my-shop-react/static/media/goods_14.39bb3c0a23633b7a7661.jpg",
@@ -23,11 +23,11 @@
     "static/media/goods_4.jpg": "/my-shop-react/static/media/goods_4.41be2cb56ad39883a125.jpg",
     "static/media/goods_11.jpg": "/my-shop-react/static/media/goods_11.1dd1c7915a98a7a4d958.jpg",
     "index.html": "/my-shop-react/index.html",
-    "main.f8cc6d86.css.map": "/my-shop-react/static/css/main.f8cc6d86.css.map",
-    "main.8071bacd.js.map": "/my-shop-react/static/js/main.8071bacd.js.map"
+    "main.3a34010f.css.map": "/my-shop-react/static/css/main.3a34010f.css.map",
+    "main.1118dd49.js.map": "/my-shop-react/static/js/main.1118dd49.js.map"
   },
   "entrypoints": [
-    "static/css/main.f8cc6d86.css",
-    "static/js/main.8071bacd.js"
+    "static/css/main.3a34010f.css",
+    "static/js/main.1118dd49.js"
   ]
 }
