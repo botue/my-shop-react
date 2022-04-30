@@ -3,9 +3,9 @@ import { Table, Button, Input, Checkbox } from 'antd';
 import { EditOutlined } from '@ant-design/icons';
 
 // 样式表
-import styles from './list.module.scss';
+import styles from './index.module.scss';
 
-export default function List(): JSX.Element {
+export default function Index(): JSX.Element {
   const columns = [
     {
       title: '商品ID',

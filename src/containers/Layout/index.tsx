@@ -18,8 +18,8 @@ import Index from '../Index';
 
 // 商品模块
 import GoodsCheckin from '../Goods/checkin';
-import GoodsList from '../Goods/list';
-import GoodsCategory from '../Goods/category';
+import GoodsList from '../Goods';
+import Category from '../Cagegory';
 
 export default function Layout(): JSX.Element {
   const collapsed = useAppSelector((state) => {
@@ -49,7 +49,7 @@ export default function Layout(): JSX.Element {
     },
     {
       path: 'goods/category',
-      element: <GoodsCategory />,
+      element: <Category />,
     },
   ];
 

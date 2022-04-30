@@ -1,7 +1,7 @@
 import { Button, Table, Tag } from 'antd';
 
 // 样式表
-import styles from './category.module.scss';
+import styles from './index.module.scss';
 
 import {
   PlusCircleFilled,
@@ -10,7 +10,7 @@ import {
   ExclamationCircleFilled,
 } from '@ant-design/icons';
 
-export default function Category(): JSX.Element {
+export default function Index(): JSX.Element {
   const columns = [
     {
       title: '分类名称',
