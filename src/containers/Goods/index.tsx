@@ -1,5 +1,5 @@
 import Header from './components/Header';
-import { Table, Button, Input, Checkbox } from 'antd';
+import { Table, Button, Input, Checkbox, Space } from 'antd';
 import { EditOutlined } from '@ant-design/icons';
 
 // 样式表
@@ -62,16 +62,16 @@ export default function Index(): JSX.Element {
     },
     {
       title: '操作',
-      width: 210,
+      width: 240,
       fixed: 'right' as const,
       render: () => {
         return (
-          <>
+          <Space size="middle">
             <Button type="primary">上架</Button>
             <Button danger type="primary">
               删除
             </Button>
-          </>
+          </Space>
         );
       },
     },
