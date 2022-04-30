@@ -17,9 +17,10 @@ import styles from './index.module.scss';
 import Index from '../Index';
 
 // 商品模块
-import GoodsCheckin from '../Goods/checkin';
 import GoodsList from '../Goods';
-import Category from '../Cagegory';
+import GoodsCheckin from '../Goods/checkin';
+import Category from '../Category';
+import CategoryAdd from '../Category/add';
 
 export default function Layout(): JSX.Element {
   const collapsed = useAppSelector((state) => {
@@ -50,6 +51,10 @@ export default function Layout(): JSX.Element {
     {
       path: 'goods/category',
       element: <Category />,
+    },
+    {
+      path: 'goods/category/add',
+      element: <CategoryAdd />,
     },
   ];
 

@@ -1,4 +1,5 @@
-import { Button, Table, Tag } from 'antd';
+import { Button, Table, Tag, Modal, Space } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 // 样式表
 import styles from './index.module.scss';
@@ -8,9 +9,28 @@ import {
   StopOutlined,
   CloseCircleFilled,
   ExclamationCircleFilled,
+  ExclamationCircleOutlined,
 } from '@ant-design/icons';
 
 export default function Index(): JSX.Element {
+  const navigate = useNavigate();
+
+  function showConfirm(type: string) {
+    Modal.confirm({
+      title: `你确定要${type}这些项目?`,
+      icon: <ExclamationCircleOutlined />,
+      cancelText: '取消',
+      okText: '确定',
+      // centered: true,
+      onOk() {
+        console.log('OK');
+      },
+      onCancel() {
+        console.log('Cancel');
+      },
+    });
+  }
+
   const columns = [
     {
       title: '分类名称',
@@ -32,6 +52,24 @@ export default function Index(): JSX.Element {
         if (!text) return null;
         return (
           <Tag color={text === '已禁用' ? '#ff4d4f' : '#ffc306'}>{text}</Tag>
+        );
+      },
+    },
+    {
+      title: '操作',
+      width: 240,
+      dataIndex: 'status',
+      render: (text: string) => {
+        if (!text) return null;
+        return (
+          <Space size="middle">
+            <Button type="primary">
+              {text === '已禁用' ? '启用' : '禁用'}
+            </Button>
+            <Button danger type="primary">
+              删除
+            </Button>
+          </Space>
         );
       },
     },
@@ -93,21 +131,44 @@ export default function Index(): JSX.Element {
   return (
     <>
       <div className={styles.actions}>
-        <Button type="primary" icon={<PlusCircleFilled />}>
+        <Button
+          onClick={() => navigate('/goods/category/add')}
+          type="primary"
+          icon={<PlusCircleFilled />}
+        >
           新增
         </Button>
-        <Button type="primary" icon={<StopOutlined />}>
+        <Button
+          onClick={() => {
+            showConfirm('启用');
+          }}
+          type="primary"
+          icon={<StopOutlined />}
+        >
           启用
         </Button>
-        <Button type="primary" icon={<ExclamationCircleFilled />}>
+        <Button
+          onClick={() => {
+            showConfirm('禁用');
+          }}
+          type="primary"
+          icon={<ExclamationCircleFilled />}
+        >
           禁用
         </Button>
-        <Button type="primary" icon={<CloseCircleFilled />}>
+        <Button
+          onClick={() => {
+            showConfirm('删除');
+          }}
+          type="primary"
+          icon={<CloseCircleFilled />}
+        >
           删除
         </Button>
       </div>
       <div className={styles.categories}>
         <Table
+          // size="middle"
           columns={columns}
           rowSelection={{
             type: 'checkbox',

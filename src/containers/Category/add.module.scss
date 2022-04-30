@@ -1,0 +1,7 @@
+.alert {
+  border-radius: 4px;
+
+  :global(.ant-alert-message) {
+    color: #ff0000;
+  }
+}
